@@ -20,7 +20,7 @@ module.exports = {
 				}
 			})
 		}
-		res.status(300).json({ok:"ok"});
+		res.status(201).json({ok:"ok"});
 	},
 	getByName: function (req, res) {
 		Book.find({ title: req.params.name }, function (err, Book) {
