@@ -23,7 +23,7 @@ module.exports = {
 		res.status(201).json({ok:"ok"});
 	},
 	getByName: function (req, res) {
-		Book.find({ title: req.params.name }, function (err, Book) {
+		Book.find({ title: req.params.title }, function (err, Book) {
 			if (err) {
 				res.status(500).send(err);
 			} else {
